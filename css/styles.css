@@ -58,7 +58,7 @@ ul {
     color: var(--black);
     margin: 0;
 }
-.list li:nth-child(2) {
+.header_nav > li:nth-child(2) {
     padding: 0 48px;
 }
 .box-img {
@@ -84,9 +84,16 @@ ul {
 
 .list {
     display: flex;
-    align-items: center;
+    /* align- items: center; */
     list-style: none;
-    /* padding-left: 94px; */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.list > li {
+    padding: 0px;
 }
 .header_nav {
     font-size: 14px;
@@ -234,9 +241,9 @@ ul {
     margin-right: 10px;
 }
 .icon-lorem {
-    margin-left: 100px;
+    margin-left: 102px;
     margin-bottom: 30px;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 .lorem-list {
     width: 270px;
@@ -244,12 +251,28 @@ ul {
     background-color: #f5f4fa;
     margin-bottom: 30px;
 }
+.icon-social {
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    display: flex;
+    border-radius: 50%;
+    fill: #afb1b8;
+    margin: 0px;
+}
+.social-svg {
+    margin: auto;
+}
 .client-svg {
     width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 3px;
     display: flex;
+}
+.our-client {
+    display: flex;
+    margin-bottom: 94px;
 }
 .our-svg {
     margin: auto;
@@ -259,6 +282,25 @@ ul {
 .our-svg:focus {
     fill: #2196f3;
 }
+.footer-svg {
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff1a;
+    display: flex;
+    border-radius: 50%;
+    fill: #afb1b8;
+}
+.footer-svg:hover,
+.footer-svg:focus {
+    background-color: var(--company-color);
+    cursor: pointer;
+}
+.footer-img {
+    margin: auto;
+    fill: #ffffff;
+}
+
+/* koniec svg */
 .title {
     flex: block;
     font-size: 44px;
@@ -381,6 +423,7 @@ ul {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    padding: 0;
 }
 .person {
     /* width: 72px; */
@@ -419,6 +462,7 @@ ul {
     background-color: var(--dark);
     height: 252px;
     padding-bottom: 60px;
+    display: flex;
 }
 .footer {
     color: var(--white);
@@ -459,4 +503,13 @@ a[title] {
 }
 .footer > .link-address {
     color: var(--white);
+}
+h5{
+    padding-top: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
 }
