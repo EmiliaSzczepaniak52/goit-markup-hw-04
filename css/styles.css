@@ -116,7 +116,6 @@ ul {
     letter-spacing: 0.02em;
     color: var(--grey1);
     margin-left: 50px;
-    padding-top: 24px;
 }
 .header_nav:nth-child(1) {
     padding-left: 93px;
@@ -229,16 +228,17 @@ ul {
 }
 
 /* main index.html */
+
+/*svg*/
 .icon {
-    padding-left: 4px;
-    /* margin-right: 2px; */
-    /* border: 2px dashed #2a2a2a; */
-    /* border-radius: 8px; */
-    fill: #2a2a2a;
-    transition: fill 0.5s;
+    margin-right: 10px;
 }
 .icon-lorem {
-    display: flex;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.lorem-list {
     width: 270px;
     height: 120px;
     background-color: #f5f4fa;
