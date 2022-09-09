@@ -260,6 +260,7 @@ header {
 }
 .icon-social:hover {
     background-color: var(--blue);
+    fill: var(--white);
 }
 .social {
     padding: 0 32px 0 32px;
