@@ -108,12 +108,14 @@ header {
 .portfolio {
     text-decoration: none;
     color: var(--black);
+    font-style: normal;
 }
 .portfolio:hover {
     color: var(--blue);
     text-decoration: none;
 }
 .contact-nav {
+    font-style: normal;
     display: flex;
     list-style: none;
     font-size: 14px;
@@ -176,6 +178,7 @@ header {
 }
 .box {
     height: 38px;
+    border-width: 0;
     border-radius: 4px;
     background-color: #f5f4fa;
     cursor: pointer;
@@ -199,6 +202,9 @@ header {
     display: flex;
     background-color: var(--white);
     border: 1px solid #eeeeee;
+}
+.number:hover,
+.number:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -273,24 +279,25 @@ header {
     border-radius: 4px;
     display: flex;
 }
-
 .our-client {
     display: flex;
     gap: 30px;
     padding-bottom: 94px;
 }
-
-.client-svg:hover,
-.client-svg:focus {
-    border-color: #2196f3;
-}
 .our-svg {
     margin: auto;
     fill: #afb1b8;
 }
+
 .our-svg:hover,
 .our-svg:focus {
-    fill: #2196f3;
+    border-color: var(--blue);
+    fill: var(--blue);
+}
+.client-svg:hover,
+.client-svg:focus {
+    background-color: var(--white);
+    border-color: var(--blue);
 }
 
 .footer-svg {
@@ -331,6 +338,7 @@ header {
 .box-frist {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 3px;
+    border-width: 0;
     background-color: #2196f3;
     font-weight: 700;
     font-size: 16px;
@@ -506,9 +514,11 @@ header {
     height: 81px;
     font-family: "Roboto";
     padding-top: 20px;
+    font-style: normal;
 }
 .contact-footer {
     color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71em;
