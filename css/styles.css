@@ -292,15 +292,13 @@ header {
     fill: #afb1b8;
 }
 
-.our-svg:hover,
-.our-svg:focus {
-    border-color: var(--blue);
-    fill: var(--blue);
-}
 .client-svg:hover,
 .client-svg:focus {
-    background-color: var(--white);
     border-color: var(--blue);
+}
+
+.client-svg:hover .our-svg {
+    fill: var(--blue);
 }
 
 .footer-svg {
